@@ -2,6 +2,9 @@ var express=require('express')
 
 var app=express();
 
+const port = process.env.PORT || 5000;
+const host = process.env.HOST || 'localhost';
+
 //set the template engine to ejs
 app.set('view engine','ejs');
 
@@ -23,4 +26,4 @@ app.get('/committee',function(req,res){
 
 //listen on the declared port
 
-app.listen(8000);
+app.listen(port,host);
