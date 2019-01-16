@@ -12,7 +12,7 @@ app.get('/',function(req,res){
   res.render('landingpage');
 });
 
-app.get('/homes',function(req,res){
+app.get('/home',function(req,res){
   res.render('homepage');
 });
 
